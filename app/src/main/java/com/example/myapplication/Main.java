@@ -14,13 +14,16 @@ public class Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main_2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         //토글버튼 객체 생성
         drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,R.string.app_name, R.string.app_name);
         drawerToggle.syncState(); // 삼선 메뉴 만들기
         mDrawerLayout.addDrawerListener(drawerToggle);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        //기본화면 홈
     }
 }
