@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">도시농부</string>
+    <string name="login">로그인</string>
+    <string name="signup">회원가입</string>
+    <string name="id_hint">아이디</string>
+    <string name="pwd_hint">비밀번호</string>
+    <string name="search">아이디/비밀번호 찾기</string>
+    <string name="pwd_hint2">비밀번호(영문+숫자+특수문자 8-15자)</string>
+    <string name="pwd_conf">비밀번호 확인</string>
+    <string name="consent_info">이용 약관, 개인 정보 수집/이용 동의</string>
+    <string name="age_order">만14세 이상입니다</string>
+    <string name="singup_completed">회원가입이 완료 되었습니다.</string>
+    <string name="login_and_use">로그인 후 이용해 주시길 바랍니다.</string>
+
 </resources>
