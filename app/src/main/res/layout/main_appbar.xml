@@ -11,21 +11,22 @@
         android:layout_width="match_parent"
         android:theme="@style/AppTheme.Appbar"
         android:id="@+id/appbar">
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary">
-
             <ImageView
                 android:id="@+id/toolbar_title"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-
                 android:src="@drawable/logo"
                 android:textColor="@color/white" />
         </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
     </com.google.android.material.appbar.AppBarLayout>
 </LinearLayout>

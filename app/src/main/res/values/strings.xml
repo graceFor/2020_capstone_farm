@@ -12,5 +12,18 @@
     <string name="age_order">만14세 이상입니다</string>
     <string name="singup_completed">회원가입이 완료 되었습니다.</string>
     <string name="login_and_use">로그인 후 이용해 주시길 바랍니다.</string>
+    <string name="cellphone_number">전화번호</string>
+    <string name="date_of_birth">생년월일</string>
+    <string name="name">홍길동</string>
+    <string name="info">내 정보</string>
+    <string name="gildong_information">홍길동 님의 정보</string>
+    <string name="modification_completed">수정 완료</string>
+    <string name="id">아이디</string>
+    <string name="withdrawl">회원 탈퇴</string>
+    <string name="name_hint">이름</string>
+    <string name="modify">수정</string>
+    <string name="right_leave">정말로 탈퇴하시겠습니까?</string>
+    <string name="yes">예</string>
+    <string name="no">아니요</string>
 
 </resources>

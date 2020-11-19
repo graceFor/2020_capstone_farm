@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/account"
+            android:id="@+id/mypage"
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
             android:title="내 정보"
             />
