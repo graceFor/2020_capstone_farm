@@ -12,9 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.myapplication.MainActivity;
 import com.example.myapplication.MainActivity2;
-import com.example.myapplication.R;
 import com.example.myapplication.Where;
+import com.example.myapplication.R;
 
 public class Main extends Fragment {
     public static Main newInstance(){return new Main();}

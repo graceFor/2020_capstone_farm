@@ -23,7 +23,6 @@ public class MainActivity2 extends AppCompatActivity {
     public static FragmentManager fm;
     public static FragmentTransaction ft;
     Main main  = new Main();
-    Where where  = new Where();
     Drawer_MyPage mypage = new Drawer_MyPage();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
