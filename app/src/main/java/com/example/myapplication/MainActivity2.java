@@ -23,11 +23,13 @@ public class MainActivity2 extends AppCompatActivity {
     public static FragmentManager fm;
     public static FragmentTransaction ft;
     Main main  = new Main();
+    Where where  = new Where();
     Drawer_MyPage mypage = new Drawer_MyPage();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_2);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -35,12 +37,14 @@ public class MainActivity2 extends AppCompatActivity {
         drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar,R.string.app_name, R.string.app_name);
         drawerToggle.syncState(); // 삼선 메뉴 만들기
         mDrawerLayout.addDrawerListener(drawerToggle);
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         //기본 화면을 홈 화면으로 해줌
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
         ft.add(R.id.main_frame,main);
         ft.commit();
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

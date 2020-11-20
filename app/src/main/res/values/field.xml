@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerArray">
+        <item> 강동구 도시농업 </item>
+        <item> 가래여울텃밭 </item>
+        <item> 강일텃밭 </item>
+        <item> 길동텃밭 </item>
+        <item> 둔촌텃밭 </item>
+        <item> 명일근린공원 공동체텃밭 </item>
+        <item> 상일텃밭 </item>
+        <item> 암사역공원텃밭 </item>
+        <item> 암사텃밭 </item>
+        <item> 일자산텃밭 </item>
+    </string-array>
+</resources>
