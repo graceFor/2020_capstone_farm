@@ -1,97 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
     android:gravity="center"
-    android:orientation="vertical">
-        <View
-            android:id="@+id/view"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sub_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@android:color/transparent"/>
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/secText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다잇다"
+                android:gravity="start"
+                android:textSize="8pt"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="현경님"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="22dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="62dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="63dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="강동구 근처 "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="22dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="'다잇다'"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="를"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="22dp"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="강동구에서 제일 키우기 쉬운게 뭐예요?"
+            android:text="찾고 계신가요?"
             android:textColor="@color/black"
+            android:layout_marginBottom="60dp"
             android:textStyle="bold"
-            android:layout_marginBottom="40dp"
             android:gravity="center"
-            android:textSize="24dp"/>
+            android:textSize="22dp"/>
 
-        <TextView
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:text="강동구의 최근 10년간의 기후와 토양을 기반으로"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textSize="19dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="향후 기후와 토양을 예측하여"
-            android:layout_marginBottom="6dp"
-            android:textColor="#FF0000"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textSize="19dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:queryHint="내 근처에서 다잇다 찾기"
+            app:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:background="@drawable/search_bg"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="60dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="                  가장 적합한  "
-            android:textColor="@color/black"
-            android:textSize="19dp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="모종 추천 서비스"
-            android:textColor="#FF0000"
-            android:textSize="19dp"
-            android:textStyle="bold" />
 
     </LinearLayout>
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="30dp"
-            android:layout_margin="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+
             <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="150dp"
+                android:layout_marginBottom="50dp"
                 android:scaleType="centerCrop"
-            android:src="@drawable/w"/>
-        </androidx.cardview.widget.CardView>
+            android:src="@drawable/we"/>
+
 
     <Button
         android:id="@+id/many_start"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_margin="15dp"
         android:textSize="25dp"
         android:fontFamily="@font/gmarketsansttfbold"
         android:textColor="@color/white"
-        android:text="텃밭 Guide"
+        android:text="다잇다 입장하기"
         android:textStyle="bold"
         android:background="@drawable/button_background"/>
-
+    </LinearLayout>
 </LinearLayout>

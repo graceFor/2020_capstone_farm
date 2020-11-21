@@ -47,11 +47,12 @@ public class Where extends Fragment implements OnMapReadyCallback {
         view = inflater.inflate(R.layout.where, container, false);
         super.onCreate(savedInstanceState);
         button=(Button)view.findViewById(R.id.button);
+        //상단 툴바 설정
         Toolbar sub_toolbar = (Toolbar)view.findViewById(R.id.sub_toolbar);
         ((MainActivity2)getActivity()).setSupportActionBar(sub_toolbar);
-//        ((MainActivity2)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        ((MainActivity2)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
-        //setSupportActionBar(toolbar);
+        ((MainActivity2)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((MainActivity2)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
+
 
         String[] str = getResources().getStringArray(R.array.spinnerArray);
         final ArrayAdapter adapter = new ArrayAdapter<String>(getContext(),R.layout.spinner_item, str);

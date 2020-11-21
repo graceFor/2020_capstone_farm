@@ -4,22 +4,44 @@
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
     android:layout_height="wrap_content">
-    <View
-        android:id="@+id/view"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@android:color/transparent"/>
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sub_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/secText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="강동구 텃밭"
+                android:gravity="start"
+                android:textSize="8pt"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+
         android:orientation="horizontal">
         <Spinner
             android:id="@+id/spinner_field"
@@ -51,8 +73,7 @@
             android:text="검색" />
 
     </LinearLayout>
-
-
+</LinearLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -69,6 +90,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="검색" />
+
 
 
 </LinearLayout>
