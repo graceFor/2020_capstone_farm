@@ -60,8 +60,15 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         tools:context="com.example.abcd.googlemap.MapsActivity" />
+    <Button
+        android:background="@drawable/radius_gray"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="검색" />
 
 
 </LinearLayout>

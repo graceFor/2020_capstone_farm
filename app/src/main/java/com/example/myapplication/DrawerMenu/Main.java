@@ -12,8 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.myapplication.Guide_start;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.MainActivity2;
+import com.example.myapplication.Many_start;
 import com.example.myapplication.Where;
 import com.example.myapplication.R;
 
@@ -34,7 +36,21 @@ public class Main extends Fragment {
             @Override
             public void onClick(View v) {
                 ((MainActivity2)getActivity()).replaceFragment(Where.newInstance(),null);
-                Log.v("sdf", "main");
+                Log.v("1", "main");
+            }
+        });
+        imageView[1].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity2)getActivity()).replaceFragment(Guide_start.newInstance(),null);
+                Log.v("2", "guide");
+            }
+        });
+        imageView[2].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity2)getActivity()).replaceFragment(Many_start.newInstance(),null);
+                Log.v("3", "many");
             }
         });
 
