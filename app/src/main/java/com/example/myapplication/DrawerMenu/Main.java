@@ -59,7 +59,7 @@ public class Main extends Fragment {
             @Override
             public void onClick(View v) {
                 ((MainActivity2)getActivity()).replaceFragment(Help_start.newInstance(),null);
-                Log.v("4", "many");
+                Log.v("4", "help");
             }
         });
         imageView[4].setOnClickListener(new View.OnClickListener() {
