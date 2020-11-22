@@ -28,7 +28,7 @@ public class Guide_start extends Fragment {
         guide_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity2)getActivity()).replaceFragment(Many.newInstance(),null);
+                ((MainActivity2)getActivity()).replaceFragment(Guide.newInstance(),null);
             }
         });
 

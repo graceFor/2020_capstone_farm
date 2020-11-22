@@ -20,11 +20,21 @@
                 android:id="@+id/secText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="다잇다"
+                android:text="글쓰기"
                 android:gravity="start"
                 android:textSize="8pt"
                 android:textColor="#000000"
                 android:textStyle="bold" />
+            <Button
+            android:id="@+id/end"
+                android:text="완료"
+                android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textSize="20dp"
+            android:layout_marginRight="2sp"
+            android:layout_gravity="right"/>
         </androidx.appcompat.widget.Toolbar>
         <View
             android:layout_width="match_parent"
