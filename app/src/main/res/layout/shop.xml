@@ -20,7 +20,7 @@
                 android:id="@+id/secText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="shop"
+                android:text="쇼핑몰"
                 android:gravity="start"
                 android:textSize="8pt"
                 android:textColor="#000000"
