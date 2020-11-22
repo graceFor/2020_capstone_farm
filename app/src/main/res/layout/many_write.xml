@@ -54,10 +54,55 @@
             android:layout_height="wrap_content"
             android:background="@drawable/write_bg"
             android:drawableTop="@drawable/ic_baseline_photo_camera_24"
+            android:layout_marginBottom="20dp"
             android:padding="15dp"
             android:text="0/10"
             android:textColor="#999999"
             android:textSize="17dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+
+            android:hint="제목"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:hint="  전화번호 입력(선택사항)"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            android:gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:hint="강동구 도시농부민들에게 '다잇다'(물물교환) 농작물을 알려주세요. 다잇다 매칭이 완료되면 서로 농작물을 교환할 수 있어요."
+            android:textSize="15dp" />
 
 
 
