@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +41,14 @@ public class Many extends Fragment {
         adapter = new ManyAdapter(getActivity(), dataList);
         recyclerView.setAdapter(adapter);
 
+        Button button = (Button)view.findViewById(R.id.add_many);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity2)getActivity()).replaceFragment(Many_write.newInstance(),null);
+            }
+        });
+
 
         return view;
 
@@ -48,9 +57,9 @@ public class Many extends Fragment {
     public void InitializeData() {
         dataList = new ArrayList<ManyItem>();
         dataList.add(new ManyItem(R.drawable.po,"유기농 자색고구마","54초 전",5, 34));
-        dataList.add(new ManyItem(R.drawable.pot,"감자","10분 전",13, 25));
-        dataList.add(new ManyItem(R.drawable.po,"유기농 자색고구마","54초 전",5, 34));
-        dataList.add(new ManyItem(R.drawable.pot,"감자","10분 전",13, 25));
+        dataList.add(new ManyItem(R.drawable.pot,"감자 나눔해요!","10분 전",13, 25));
+        dataList.add(new ManyItem(R.drawable.pp34,"처음 키워본 토마토","1시간 전",45, 134));
+        dataList.add(new ManyItem(R.drawable.pot,"브로콜리 나눔","10분 전",13, 25));
         dataList.add(new ManyItem(R.drawable.po,"유기농 자색고구마","54초 전",5, 34));
         dataList.add(new ManyItem(R.drawable.pot,"감자","10분 전",13, 25));
 
