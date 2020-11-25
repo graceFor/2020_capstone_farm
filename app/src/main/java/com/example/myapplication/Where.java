@@ -59,6 +59,7 @@ public class Where extends Fragment implements OnMapReadyCallback {
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         final Spinner spinner = (Spinner)view.findViewById(R.id.spinner_field);
         spinner.setAdapter(adapter);
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
