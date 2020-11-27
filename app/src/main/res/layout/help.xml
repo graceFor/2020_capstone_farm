@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:background="@color/yellow"
     android:orientation="vertical"
     android:layout_height="wrap_content">
     <com.google.android.material.appbar.AppBarLayout
@@ -20,24 +21,32 @@
                 android:id="@+id/secText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="다잇다"
+                android:text="공동농업"
                 android:gravity="start"
                 android:textSize="8pt"
                 android:textColor="#000000"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/add_help"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginRight="20sp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_baseline_create_24"/>
         </androidx.appcompat.widget.Toolbar>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/lightgray"/>
     </com.google.android.material.appbar.AppBarLayout>
-    <LinearLayout
-        android:layout_marginTop="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp">
 
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_account_list"
+        android:layout_width="match_parent"
+        android:layout_height="606dp"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical" />
+
 </LinearLayout>

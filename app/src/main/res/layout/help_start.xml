@@ -32,12 +32,72 @@
             android:background="@color/lightgray"/>
     </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
         android:orientation="vertical"
+        android:layout_marginBottom="60dp"
         android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="농업 품앗이를 시작해보세요!"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="22dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="서로 나누며, 도우며!"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="즐거운 '공동농업나눔터'에 오실걸 환영해요"
+            android:textColor="@color/black"
+
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="22dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hpes"/>
+
+        <Button
+            android:id="@+id/help_start"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:textSize="25dp"
+            android:fontFamily="@font/gmarketsansttfbold"
+            android:textColor="@color/white"
+            android:text="공동농업 입장하기"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"/>
     </LinearLayout>
 </LinearLayout>

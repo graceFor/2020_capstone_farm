@@ -23,7 +23,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="29dp"
-                android:text="배추"
+                android:text="양배추"
                 android:id="@+id/name"/>
         </androidx.appcompat.widget.Toolbar>
 
@@ -43,7 +43,7 @@
                 <ImageView
                     android:layout_width="220dp"
                     android:layout_height="220dp"
-                    android:src="@drawable/p1"
+                    android:src="@drawable/p8"
                     android:scaleType="fitXY"/>
 
             <TextView
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/cal"/>
+                android:src="@drawable/cal1"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -76,56 +76,49 @@
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 배추는 봄, 가을에 모두 재배하는데 파종 후 새잎이 5장 정도 나올 때까지 모를 길러 심는다." />
+                android:text="- 양배추는 봄, 가을에 모두 재배가 가능하다." />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 모를 기르는데 25일 정도 걸린다." />
+                android:text="- 한달 정도 모를 길러 새잎이 5장 나온 다음에 옮겨 심는다." />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 배추도 물빠짐이 좋도록 외골로 두둑을 만들어 준다." />
+                android:text="- 생육기간이 길고 포기가 차야 되기 때문에 거름을 충분히 하여야 한다." />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 특히 봄배추는 배추좀나방이나 배추흰나비 애벌레 때문에 구멍이 숭숭 뚫리게 되기도 한다." />
+                android:text="- 통이 들 때 수분이 부족하면 품질이 나빠지므로 물을 자주 준다." />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 미생물농약이나 천연농약을 사용해서 해충을 줄여야 된다." />
+                android:text="- 웃거름은 한번 정도 준다." />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 모기장 같은 망사를 쳐 주는 것도 한 방법이다." />
+                android:text="- 통이 든(결구) 다음에는 외엽이 부러지기 쉽고 뿌리가 끊어져 생육이 나빠지므로 제초작업은 통이 들기 전에 한다." />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/black"
                 android:textSize="15dp"
-                android:text="- 통이 잘 들도록 묶어 주기도 하는데 굳이 묶지 않아도 된다." />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="- 퇴비는 밑거름과 웃거름으로 몇 차례 나누어 주면 좋다." />
+                android:text="- 손으로 포기를 눌렀을 때 단단하면 수확할 수 있다." />
 
             <TextView
                 android:layout_width="match_parent"
@@ -142,14 +135,20 @@
             android:layout_marginBottom="5dp"
             android:textSize="15dp"
             android:textColor="@color/black"
-            android:text="- 인돌이라는 성분이 있어 에스트로겐의 대사를 활성화시켜 유방암을 예방"/>
+            android:text="- 라이신 성분이 있어 기억력 향상에 좋으며, 비타민 U를 함유하고 있어 위궤양, 빈혈,당뇨병에 좋으며, 피를 맑게 해 준다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="- 섬유질이 풍부하여 변비치료에 좋으며, 면역기구를 자극하여 세균이나 바이러스를 죽이는 효과가 있다."/>
 
             <TextView
-
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="20dp"
-                android:text="- 페닐에칠이소치오시아네이트 성분은 니코틴을 제거하며 폐암 예방에 효과"
+                android:text="- 주로 생채로 많이 이용하며 데쳐 먹거나 돼지고기, 베이컨, 당근 등과 함께 끓여 먹는다."
                 android:textColor="@color/black"
                 android:textSize="15dp" />
 

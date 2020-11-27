@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sub_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/secText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공동농업 글쓰기"
+                android:gravity="start"
+                android:textSize="8pt"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <Button
+            android:id="@+id/end"
+                android:text="완료"
+                android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textSize="20dp"
+            android:layout_marginRight="2sp"
+            android:layout_gravity="right"/>
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/write_bg"
+            android:drawableTop="@drawable/ic_baseline_photo_camera_24"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:text="0/10"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+
+            android:hint="제목"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:hint="  전화번호 입력(선택사항)"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            android:gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:hint="강동구 도시농부민 서로 서로 둅는 농업 품앗이를 해보세요."
+            android:textSize="15dp" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
