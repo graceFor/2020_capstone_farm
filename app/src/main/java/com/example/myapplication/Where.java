@@ -20,15 +20,18 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.util.List;
 
 public class Where extends Fragment implements OnMapReadyCallback {
@@ -39,6 +42,8 @@ public class Where extends Fragment implements OnMapReadyCallback {
     private String strs;
     private EditText editText;
     private View view;
+    private String ga = "강일텃밭";
+    private String il = "일자산텃밭";
 
     public static Where newInstance(){return new Where();}
     @Nullable
@@ -154,10 +159,28 @@ public class Where extends Fragment implements OnMapReadyCallback {
                 mOptions2.position(point);
                 // 마커 추가
                 mMap.addMarker(mOptions2);
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(point,14));
+                mMap.setOnMarkerClickListener(markerClickListener);
                 // 해당 좌표로 화면 줌
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(point,15));
+
+
             }
+            GoogleMap.OnMarkerClickListener markerClickListener = new GoogleMap.OnMarkerClickListener() {
+                @Override
+                public boolean onMarkerClick(Marker marker) {
+                    Log.d("d", marker.getTitle());
+                    if( (marker.getTitle()).equals(ga)){
+                        ((MainActivity2)getActivity()).replaceFragment(Where_Detail.newInstance(),null);
+                    }
+                    else if((marker.getTitle()).equals(il)){
+                        ((MainActivity2)getActivity()).replaceFragment(Where_Detail_1.newInstance(),null);}
+
+                    return false;
+
+                }
+            };
         });
+
         ////////////////////
 
         // Add a marker in Sydney and move the camera
@@ -165,4 +188,5 @@ public class Where extends Fragment implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(gangdon).title("서울시 강동구"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(gangdon,12));
     }
+
 }

@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Where_Detail extends Fragment {
-    public static Where_Detail newInstance(){return new Where_Detail();}
+public class Where_Detail_1 extends Fragment {
+    public static Where_Detail_1 newInstance(){return new Where_Detail_1();}
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -25,16 +25,13 @@ public class Where_Detail extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.where_detail, container, false);
+        view = inflater.inflate(R.layout.where_detail_1, container, false);
         Toolbar sub_toolbar = (Toolbar)view.findViewById(R.id.sub_toolbar);
         ((MainActivity2)getActivity()).setSupportActionBar(sub_toolbar);
         ((MainActivity2)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ((MainActivity2)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 
-
-
-        //mRecyclerView =(RecyclerView)
 
         return view;
     }

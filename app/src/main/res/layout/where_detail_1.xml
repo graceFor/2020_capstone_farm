@@ -22,7 +22,7 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="25dp"
-            android:text="강일텃밭"
+            android:text="일자산텃밭"
             android:id="@+id/name"/>
     </androidx.appcompat.widget.Toolbar>
 
@@ -52,7 +52,7 @@
             android:layout_height="290dp"
             android:layout_marginBottom="20dp"
             android:scaleType="fitXY"
-            android:src="@drawable/gangil" />
+            android:src="@drawable/iljasan" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -70,7 +70,7 @@
         android:layout_marginBottom="15dp"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:text="2011년도에 방치된 국·공유지를 정비하여 조성된 텃밭으로, 2016년도에 인근 폐천부지를 정비하여 텃밭 및 보행로 추가 조성"
+        android:text="일자산 근처 기존의 작은 텃밭을 새롭게 단장하여 재탄생한 텃밭으로 접근성이 용이"
         android:id="@+id/detail"/>
 
     <TextView
@@ -88,7 +88,7 @@
         android:layout_marginBottom="15dp"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:text="강동구 강일동 33-3 외 8"
+        android:text="강동구 둔촌동 599"
         android:id="@+id/place"/>
     <TextView
         android:layout_width="match_parent"
@@ -105,7 +105,7 @@
         android:layout_marginBottom="15dp"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:text="8,300㎡ 총 214구좌 (일반 텃밭 : 185구좌, 정원형 텃밭 29구좌)"
+        android:text="5,024㎡ 총 250구좌"
         android:id="@+id/width"/>
     <TextView
         android:layout_width="match_parent"
@@ -122,7 +122,7 @@
         android:layout_marginBottom="15dp"
         android:textSize="15dp"
         android:textColor="@color/black"
-        android:text="관리사무실 1동, 휴식용 테이블 3개,교육장 1동, 이동식 화장실 1개"
+        android:text="관리사무실 1동, 주차장, 휴식용 테이블 2개, 이동식화장실 1개"
         android:id="@+id/around"/>
     <TextView
         android:layout_width="match_parent"

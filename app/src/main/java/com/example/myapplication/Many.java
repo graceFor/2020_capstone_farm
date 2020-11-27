@@ -56,12 +56,13 @@ public class Many extends Fragment {
 
     public void InitializeData() {
         dataList = new ArrayList<ManyItem>();
-        dataList.add(new ManyItem(R.drawable.po,"유기농 자색고구마","54초 전",5, 34));
+        dataList.add(new ManyItem(R.drawable.union,"양파 나눔해요~","54초 전",5, 34));
+        dataList.add(new ManyItem(R.drawable.o1,"가지 다잇다 하실 분","10분 전",13, 25));
         dataList.add(new ManyItem(R.drawable.pot,"감자 나눔해요!","10분 전",13, 25));
         dataList.add(new ManyItem(R.drawable.pp34,"처음 키워본 토마토","1시간 전",45, 134));
-        dataList.add(new ManyItem(R.drawable.pot,"브로콜리 나눔","10분 전",13, 25));
-        dataList.add(new ManyItem(R.drawable.po,"유기농 자색고구마","54초 전",5, 34));
-        dataList.add(new ManyItem(R.drawable.pot,"감자","10분 전",13, 25));
+        dataList.add(new ManyItem(R.drawable.po,"유기농 자색고구마","1일 전",5, 34));
+        dataList.add(new ManyItem(R.drawable.b1,"브로콜리 나눔","1일 전",13, 25));
+
 
 
 

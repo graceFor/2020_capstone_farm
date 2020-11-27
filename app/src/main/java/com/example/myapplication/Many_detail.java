@@ -9,32 +9,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-
-public class Where_Detail extends Fragment {
-    public static Where_Detail newInstance(){return new Where_Detail();}
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<MyData> myDataset;
+public class Many_detail extends Fragment {
+    public static Many_detail newInstance(){return new Many_detail();}
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.where_detail, container, false);
+        view = inflater.inflate(R.layout.many_detail, container, false);
         Toolbar sub_toolbar = (Toolbar)view.findViewById(R.id.sub_toolbar);
         ((MainActivity2)getActivity()).setSupportActionBar(sub_toolbar);
         ((MainActivity2)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ((MainActivity2)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-
-
-
-        //mRecyclerView =(RecyclerView)
 
         return view;
     }

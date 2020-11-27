@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 public class Many_write extends Fragment {
     public static Many_write newInstance(){return new Many_write();}
@@ -30,6 +31,8 @@ public class Many_write extends Fragment {
         end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FragmentManager fm = getFragmentManager();
+                fm.popBackStack(null,FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 ((MainActivity2)getActivity()).replaceFragment(Many.newInstance(),null);
             }
         });
