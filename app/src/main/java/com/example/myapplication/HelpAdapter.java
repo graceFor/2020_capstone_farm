@@ -59,7 +59,7 @@ public class HelpAdapter extends RecyclerView.Adapter<HelpAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle(1);
-                ((MainActivity2)context).replaceFragment(Many_detail.newInstance(), bundle);
+                ((MainActivity2)context).replaceFragment(Help_detail.newInstance(), bundle);
             }
         });
 

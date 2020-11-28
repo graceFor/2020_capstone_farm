@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button_gray"
-            android:hint="전화번호) 010-0000-0000"
+            android:hint="현재 강동구 텃밭 농부라면 텃밭 이름"
             android:inputType="textPersonName"
             android:padding="15dp"
             android:textSize="17dp"
@@ -50,7 +50,7 @@
             android:orientation="horizontal">
             <EditText
                 android:id="@+id/signup_id"
-                android:layout_width="250dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:layout_marginBottom="20dp"
@@ -61,15 +61,7 @@
                 android:textSize="17dp"
                 android:textColor="@color/input_register"
                 android:textColorHint="@color/input_register_hint" />
-            <Button
-                android:id="@+id/signup_idCheck"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="중복확인"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/radius_gray"
-                android:textColor="#ffffff"/>
+
 
         </LinearLayout>
         <EditText
